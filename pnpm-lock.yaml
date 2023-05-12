@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.32.0
   '@antfu/ni': ^0.18.8
-  '@rollup/plugin-alias': ^4.0.2
+  '@rollup/plugin-alias': ^5.0.0
   '@rollup/plugin-commonjs': ^23.0.3
   '@rollup/plugin-json': ^5.0.2
   '@rollup/plugin-node-resolve': ^15.0.1
@@ -24,7 +24,7 @@ specifiers:
 devDependencies:
   '@antfu/eslint-config': 0.32.0_hsf322ms6xhhd4b5ne6lb74y4a
   '@antfu/ni': 0.18.8
-  '@rollup/plugin-alias': 4.0.2_rollup@3.5.0
+  '@rollup/plugin-alias': 5.0.0_rollup@3.5.0
   '@rollup/plugin-commonjs': 23.0.3_rollup@3.5.0
   '@rollup/plugin-json': 5.0.2_rollup@3.5.0
   '@rollup/plugin-node-resolve': 15.0.1_rollup@3.5.0
@@ -281,8 +281,8 @@ packages:
       fastq: 1.10.1
     dev: true
 
-  /@rollup/plugin-alias/4.0.2_rollup@3.5.0:
-    resolution: {integrity: sha512-1hv7dBOZZwo3SEupxn4UA2N0EDThqSSS+wI1St1TNTBtOZvUchyIClyHcnDcjjrReTPZ47Faedrhblv4n+T5UQ==}
+  /@rollup/plugin-alias/5.0.0_rollup@3.5.0:
+    resolution: {integrity: sha512-l9hY5chSCjuFRPsnRm16twWBiSApl2uYFLsepQYwtBuAxNMQ/1dJqADld40P0Jkqm65GRTLy/AC6hnpVebtLsA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0
