@@ -2,7 +2,7 @@
   "name": "@daguanren21/utils",
   "type": "module",
   "version": "1.0.2",
-  "packageManager": "pnpm@7.27.1",
+  "packageManager": "pnpm@7.33.7",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @daguanren21",
   "author": "daguanren21",
   "license": "MIT",
