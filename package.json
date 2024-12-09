@@ -1,7 +1,7 @@
 {
   "name": "@daguanren21/utils",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "packageManager": "pnpm@9.12.3",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @daguanren21",
   "author": "daguanren21",
