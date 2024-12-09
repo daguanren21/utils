@@ -1,5 +1,5 @@
-import { remove } from './array'
 import type { Fn } from './types'
+import { remove } from './array'
 
 export interface SingletonPromiseReturn<T> {
   (): Promise<T>
@@ -40,7 +40,6 @@ export function createSingletonPromise<T>(fn: () => Promise<T>): SingletonPromis
  */
 export function sleep(ms: number, callback?: Fn<any>) {
   return new Promise<void>(resolve =>
-    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     setTimeout(async () => {
       await callback?.()
       resolve()
@@ -94,8 +93,8 @@ export function createPromiseLock() {
  * Promise with `resolve` and `reject` methods of itself
  */
 export interface ControlledPromise<T = void> extends Promise<T> {
-  resolve(value: T | PromiseLike<T>): void
-  reject(reason?: any): void
+  resolve: (value: T | PromiseLike<T>) => void
+  reject: (reason?: any) => void
 }
 
 /**

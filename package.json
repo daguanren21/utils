@@ -21,26 +21,33 @@
   "exports": {
     ".": {
       "types": "./index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "index.d.ts",
   "files": [
-    "dist",
-    "*.d.ts"
+    "*.d.ts",
+    "dist"
   ],
+  "engines": {
+    "node": ">=18.12"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "nr build --watch",
     "lint": "eslint .",
+    "lint-fix": "nr lint --fix",
     "prepublishOnly": "npm run build",
     "release": "bumpp --commit --push --tag && npm publish",
     "start": "esno src/index.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
@@ -52,8 +59,7 @@
     "@types/node": "^22.10.1",
     "@types/throttle-debounce": "^5.0.2",
     "bumpp": "^9.9.0",
-    "eslint": "npm:eslint-ts-patch@9.8.0-1",
-    "eslint-ts-patch": "9.8.0-1",
+    "eslint": "^9.16.0",
     "esno": "^4.8.0",
     "p-limit": "^6.1.0",
     "rollup": "^4.28.1",
@@ -63,12 +69,6 @@
     "typescript": "^5.7.2",
     "vite": "^6.0.3",
     "vitest": "^2.1.8"
-  },
-  "dependencies": {
-    "dayjs": "^1.11.13"
-  },
-  "engines": {
-    "node": ">=18.12"
   },
   "publishConfig": {
     "access": "public",
