@@ -65,5 +65,9 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
