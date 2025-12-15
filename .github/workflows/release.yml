@@ -5,19 +5,10 @@ on:
     tags:
       - 'v*'
 permissions:
+  contents: write
   id-token: write # to use OpenID Connect token for provenance (changesets/action)
 jobs:
   release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 22.x
-
-      - run: npx conventional-github-releaser -p angular
-        env:
-          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    uses: sxzz/workflows/.github/workflows/release.yml@v1
+    with:
+      publish: true
