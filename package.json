@@ -1,7 +1,7 @@
 {
   "name": "@daguanren21/utils",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "packageManager": "pnpm@9.12.3",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @daguanren21",
   "author": "daguanren21",
@@ -41,7 +41,7 @@
     "lint": "eslint .",
     "lint-fix": "nr lint --fix",
     "prepublishOnly": "npm run build",
-    "release": "bumpp --commit --push --tag && npm publish",
+    "release": "bumpp --commit --push --tag",
     "start": "esno src/index.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
